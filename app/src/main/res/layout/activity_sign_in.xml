@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:focusableInTouchMode="true">
+
+    <RelativeLayout
+        android:id="@+id/top_rl"
+        android:layout_width="match_parent"
+        android:layout_height="254dp">
+
+        <ImageView
+            android:id="@+id/header_iv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/pics" />
+
+        <!--  <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/ic_login_logo" />-->
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top_rl"
+        android:layout_marginTop="@dimen/_minus20sdp"
+        android:background="@drawable/layout_bg"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/_25sdp"
+        android:paddingTop="@dimen/_15sdp"
+        android:paddingRight="@dimen/_25sdp">
+
+        <LinearLayout
+            android:layout_width="210dp"
+            android:layout_height="wrap_content">
+
+            <!--  <TextView
+                  android:id="@+id/back_tv"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:background="@drawable/dotted_line"
+                  android:fontFamily="@font/proximanova_regular"
+                  android:text="Back"
+                  android:textColor="@color/green"
+                  android:textSize="@dimen/_14sdp" />-->
+
+            <TextView
+                android:id="@+id/secondLabel"
+                android:layout_width="193dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:fontFamily="@font/semibold"
+                android:gravity="left"
+                android:paddingBottom="@dimen/_20sdp"
+                android:text="Sign In"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_30sdp" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="346dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:fontFamily="@font/proximanova_regular"
+            android:gravity="left"
+            android:text="Phone Number"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_20sdp"
+            android:paddingBottom="@dimen/_10sdp"/>
+        <EditText
+            android:layout_width="346dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:fontFamily="@font/semibold"
+            android:gravity="left"
+            android:inputType="phone"
+            android:hint="+60"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_20sdp"
+            android:paddingBottom="@dimen/_10sdp"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp">
+
+            <Button
+                android:id="@+id/signInSignUpBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_4sdp"
+                android:background="@drawable/login_btn"
+                android:fontFamily="@font/proximanova_bold"
+                android:text="Sign In/Sign Up"
+                android:textColor="#fff"
+                android:textSize="@dimen/_14sdp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

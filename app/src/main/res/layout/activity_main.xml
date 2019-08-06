@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:focusableInTouchMode="true">
+
+    <RelativeLayout
+        android:id="@+id/top_rl"
+        android:layout_width="match_parent"
+        android:layout_height="254dp">
+
+        <ImageView
+            android:id="@+id/header_iv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/pics" />
+
+        <!--  <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/ic_login_logo" />-->
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top_rl"
+        android:layout_marginTop="@dimen/_minus20sdp"
+        android:background="@drawable/layout_bg"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/_25sdp"
+        android:paddingTop="@dimen/_15sdp"
+        android:paddingRight="@dimen/_25sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+          <!--  <TextView
+                android:id="@+id/back_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/dotted_line"
+                android:fontFamily="@font/proximanova_regular"
+                android:text="Back"
+                android:textColor="@color/green"
+                android:textSize="@dimen/_14sdp" />-->
+
+            <TextView
+                android:id="@+id/secondLabel"
+                android:layout_width="346dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:fontFamily="@font/semibold"
+                android:gravity="center"
+                android:text="OTP Verification"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_20sdp"
+                android:paddingBottom="@dimen/_20sdp"/>
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="346dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:fontFamily="@font/proximanova_regular"
+            android:gravity="center"
+            android:text="Please key in OTP you received                                 via SMS on +60 172782721"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15sdp"
+            android:paddingBottom="@dimen/_10sdp"/>
+
+        <com.chaos.view.PinView
+            android:id="@+id/secondPinView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/secondLabel"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/common_padding"
+            android:inputType="numberPassword"
+            android:textColor="@color/grey"
+            android:cursorVisible="false"
+            app:lineColor="@color/grey"
+            app:itemRadius="@dimen/pv_pin_view_item_radius" />
+
+        <TextView
+            android:layout_width="346dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:fontFamily="@font/proximanova_regular"
+            android:gravity="center"
+            android:text="Resend OTP"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15sdp"
+            android:paddingTop="@dimen/_10sdp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp">
+
+            <Button
+                android:id="@+id/OtpPasswordBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_4sdp"
+                android:background="@drawable/login_btn"
+                android:fontFamily="@font/proximanova_bold"
+                android:text="Continue"
+                android:textColor="#fff"
+                android:textSize="@dimen/_14sdp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="346dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:fontFamily="@font/proximanova_regular"
+            android:gravity="center"
+            android:text="Trouble registering? Contact"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15sdp"
+            android:paddingTop="@dimen/_40sdp"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
