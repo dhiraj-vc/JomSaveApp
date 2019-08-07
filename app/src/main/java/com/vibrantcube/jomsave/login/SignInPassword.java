@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.vibrantcube.jomsave.HomeActivity;
 import com.vibrantcube.jomsave.R;
 import com.vibrantcube.jomsave.commonActivity.HomeButtomNavigationActivity;
 
@@ -15,7 +16,8 @@ public class SignInPassword extends AppCompatActivity {
 
 
    private TextView forgotPasswordTxtView;
-   private  Button signInSignInBtn;
+   private Button signInSignInBtn;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,13 +34,17 @@ public class SignInPassword extends AppCompatActivity {
             }
         });
 
-        signInSignInBtn  = findViewById(R.id.signInSignInBtn);
+        signInSignInBtn = findViewById(R.id.signInSignInBtn);
         signInSignInBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent signIn = new Intent(SignInPassword.this, HomeButtomNavigationActivity.class);
-                startActivity(signIn);
+
+
+                Intent intent = new Intent(SignInPassword.this, HomeButtomNavigationActivity.class);
+                startActivity(intent);
+                finish();
+                    }
+                });
             }
-        });
-    }
-}
+        }
+

@@ -12,6 +12,22 @@
     <string name="title_profile">Profile</string>
 
     <!-- TODO: Remove or change this placeholder text -->
+
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">JomSave</string>
+    <string name="nav_header_subtitle">www.JomSave.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="notification">Notification</string>
+    <string name="menu_qrcode">QrCode</string>
+    <string name="menu_share_referal_info">Share Referal Info</string>
+    <string name="menu_setting_link">Setting Link</string>
+    <string name="menu_favourite_link">Favourite Link</string>
+    <string name="menu_me_link">Me Link</string>
+    <string name="menu_feedback_link">Feedback Link</string>
+    <string name="menu_complaint_link">Complaint Link</string>
+    <string name="menu_about_jomsave">About JomSave</string>
+    <string name="menu_logout">Logout</string>
 </resources>
